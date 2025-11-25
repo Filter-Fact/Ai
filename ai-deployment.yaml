@@ -16,7 +16,7 @@ spec:
         - name: ncr-secret
       containers:
         - name: ai-server
-          image: contest-cluster54-registry.kr.ncr.ntruss.com/ai-server:latest
+          image: refactoring-registry.kr.ncr.ntruss.com/ai-server:manual
           ports:
             - containerPort: 8000
           securityContext:
@@ -40,7 +40,7 @@ spec:
             - name: PG_PORT
               value: "5432"
             - name: PG_DATABASE
-              value: "FilterFacts"
+              value: "filterfacts"
             - name: PG_USER
               value: "postgres"
             - name: PG_PASSWORD
