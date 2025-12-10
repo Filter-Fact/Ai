@@ -1,4 +1,4 @@
--- 기능성식품용 테이블
+-- 기능성식품용 테이블 hnsw 쓰도록 변환
 CREATE TABLE IF NOT EXISTS rag_documents_food (
   id          BIGSERIAL PRIMARY KEY,
   source_id   TEXT,
